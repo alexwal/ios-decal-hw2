@@ -14,7 +14,6 @@ class ViewController: UIViewController {
   var w: CGFloat!
   var h: CGFloat!
   
-  
   // IMPORTANT: Do NOT modify the name or class of resultLabel.
   //            We will be using the result label to run autograded tests.
   // MARK: The label to display our calculations
@@ -27,7 +26,6 @@ class ViewController: UIViewController {
   var op = ""
   var B = ""
   var decimals = false
-  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -71,9 +69,7 @@ class ViewController: UIViewController {
     else {
       resultLabel.text = content
     }
-    
   }
-  
   
   // TODO: A calculate method with no parameters, scary!
   //       Modify this one or create your own.
@@ -133,7 +129,6 @@ class ViewController: UIViewController {
       B = B + sender.content
       updateResultLabel(B)
     }
-    
   }
   
   // REQUIRED: The responder to an operator button being pressed.
@@ -178,7 +173,6 @@ class ViewController: UIViewController {
       }
       B = ""
       op = sender.content
-      
     }
   }
   
@@ -272,5 +266,4 @@ class ViewController: UIViewController {
       }
     }
   }
-  
 }
